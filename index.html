@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Carlos Mauro Buelvas Fernandez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="nav-container" id="navContainer">
+        <div class="nav-content">
+            <div class="profile-section">
+                <img src="images/me.jpg" alt="Carlos Mauro" class="profile-img">
+                <div class="profile-name">Carlos Mauro Buelvas Fernandez</div>
+                <div class="profile-title">Técnico en Electricidad y Telecomunicaciones</div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i>INICIO</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i>SOBRE MÍ</a></li>
+                <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i>CURRÍCULUM</a></li>
+
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>CONTACTO</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <main class="main-content" id="mainContent">
+        <section class="section hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>¡HOLA!<br>SOY <span class="highlight">CARLOS MAURO</span></h1>
+                        <p class="subtitle">Técnico en Electricidad y Telecomunicaciones</p>
+                        <button class="hero-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                            SOBRE CARLOS MAURO
+                        </button>
+                        <p>---------------------------------------------------</p>
+                        <button class="hero-btn" onclick="window.open('https://wa.me/573006013030','_blank')">
+                            Whatsapp
+                        </button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/me.jpg" alt="Carlos Mauro">
+                        <div class="floating-icons">
+                            <div class="floating-icon"><i class="fas fa-home"></i></div>
+                            <div class="floating-icon"><i class="fas fa-user"></i></div>
+                            <div class="floating-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="floating-icon"><i class="fas fa-envelope"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-sidebar">
+                        <img src="images/me.jpg" alt="Carlos Mauro">
+                        <h3>INICIO</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#home">INICIO</a></li>
+                            <li><a href="#about">SOBRE MÍ</a></li>
+                            <li><a href="#resume">CURRÍCULUM</a></li>
+                            <li><a href="#contact">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-main">
+                        <h2>SOBRE MÍ</h2>
+                        
+                        <div class="about-intro">
+                            <img src="images/me.jpg" alt="Carlos Mauro">
+                            <div class="about-intro-text">
+                                <h3>Soy Carlos Mauro Buelvas Fernandez, Técnico 
+                                    en Electricidad y Telecomunicaciones</h3>
+                                <p>De Sincelejo-Sucre, Colombia</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about-description">
+                            Instalación, mantenimiento y reparación de sistemas eléctricos residenciales, comerciales e industriales.
+
+                            Especialización en baja y media tensión, cableado estructurado, CCTV, redes inalámbricas y configuración de equipos de red.
+
+                            Enfoque en seguridad, eficiencia energética y mejora continua.
+
+                            Responsable, proactivo, con habilidades para trabajo en equipo y resolución de problemas técnicos.
+
+                            Alta capacidad de adaptación a nuevas tecnologías y compromiso con soluciones prácticas y de calidad en entornos exigentes.
+                        </p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Años Experiencia</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">9+</span>
+                                <span class="stat-label">Proyectos Realizados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">--</span>
+                                <span class="stat-label">Clientes Satisfechos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">--</span>
+                                <span class="stat-label">Tazas de Café</span>
+                            </div>
+                        </div>
+                        
+                        <h3 style="margin-bottom: 20px;">¿Qué Hago?</h3>
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <i class="fas fa-bolt"></i>
+                                <h4>INSTALACIONES ELÉCTRICAS</h4>
+                                <p>Instalación, mantenimiento y reparación de sistemas eléctricos residenciales, comerciales e industriales.</p>
+                            </div>
+                            <div class="service-item">
+                                <i class="fas fa-network-wired"></i>
+                                <h4>TELECOMUNICACIONES Y REDES</h4>
+                                <p>Experiencia en redes de telecomunicaciones, cableado estructurado y configuración de equipos de red.</p>
+                            </div>
+                            <div class="service-item">
+                                <i class="fas fa-cctv"></i>
+                                <h4>SISTEMAS DE CCTV</h4>
+                                <p>Especializado en sistemas de CCTV y telecomunicaciones inalámbricas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="resume" style="background: var(--bg-light);">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-sidebar">
+                        <img src="images/me.jpg" alt="Carlos Mauro">
+                        <h3>CURRÍCULUM</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#home">INICIO</a></li>
+                            <li><a href="#about">SOBRE MÍ</a></li>
+                            <li><a href="#resume">CURRÍCULUM</a></li>
+                            <li><a href="#contact">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-main">
+                        <h2>CURRÍCULUM</h2>
+                        
+                        <div class="resume-section">
+                            <h3 style="color: var(--primary-orange); margin-bottom: 30px; font-size: 1.5rem;">EDUCACIÓN</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">En formación (5º semestre)</div>
+                                    <div class="timeline-content">
+                                        <h4>Ingeniería de Telecomunicaciones</h4>
+                                        <p class="institution">Universidad Abierta y a Distancia UNAD, Sincelejo-Sucre</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2015</div>
+                                    <div class="timeline-content">
+                                        <h4>Técnico en Instalaciones Eléctricas Residenciales</h4>
+                                        <p class="institution">Servicio Nacional de Aprendizaje SENA, Sincelejo-Sucre</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3 style="color: var(--primary-orange); margin-bottom: 30px; font-size: 1.5rem;">OTROS ESTUDIOS</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2015</div>
+                                    <div class="timeline-content">
+                                        <h4>Seguridad Industrial y Riesgo Eléctrico</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2015</div>
+                                    <div class="timeline-content">
+                                        <h4>Mantenimiento en Línea Viva de Redes Aéreas de Distribución de Energía Eléctrica Niveles de Tensión II y III</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2015</div>
+                                    <div class="timeline-content">
+                                        <h4>Interpretación de Planos Arquitectónicos</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2014</div>
+                                    <div class="timeline-content">
+                                        <h4>Aprendiz Digital</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2008</div>
+                                    <div class="timeline-content">
+                                        <h4>Administración de Empresas</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2007</div>
+                                    <div class="timeline-content">
+                                        <h4>Contabilidad Básica</h4>
+                                        <p class="institution">SENA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resume-section">
+                            <h3 style="color: var(--primary-orange); margin-bottom: 30px; font-size: 1.5rem;">EXPERIENCIA</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">1 año y 7 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Inspector Eléctrico</h4>
+                                        <p class="institution">DAR ARQUITECTURA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">1 año y 7 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Técnico</h4>
+                                        <p class="institution">SIIA PLUS</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">4 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Ayudante</h4>
+                                        <p class="institution">SICTE</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">8 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Ayudante</h4>
+                                        <p class="institution">SICTE</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">1 año</div>
+                                    <div class="timeline-content">
+                                        <h4>Oficial Electricista</h4>
+                                        <p class="institution">F.S MANTENIMIENTOS INTEGRALES</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">5 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Técnico Electricista</h4>
+                                        <p class="institution">ATLANTE PROYECTOS DE INGENIERIA</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">6 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Técnico Electricista</h4>
+                                        <p class="institution">Metro Sabanas</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">6 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Almacenista</h4>
+                                        <p class="institution">Consorcio Soluciones Habitacionales</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">10 meses</div>
+                                    <div class="timeline-content">
+                                        <h4>Almacenista</h4>
+                                        <p class="institution">Consorcio Soluciones Habitacionales</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resume-section">
+                            <h3 style="color: var(--primary-orange); margin-bottom: 30px; font-size: 1.5rem;">HABILIDADES</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-name">Instalaciones Eléctricas</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                    <div class="skill-percent">95%</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Telecomunicaciones y Redes</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Interpretación de Planos</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Seguridad Eléctrica</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <section class="section contact" id="contact" style="background: var(--bg-light);">
+            <div class="container">
+                <h2>CONTACTO</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Calle 25B 8D 04, Sincelejo-Sucre, Colombia</p>
+                        <p><i class="fas fa-phone"></i> +57 3006013030</p>
+                        <p><i class="fas fa-envelope"></i> carlosmau23@gmail.com</p>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Envíame un Mensaje</h3>
+                            <form action="https://formspree.io/f/xovwrkjg" method="POST">
+                                    <div class="form-group">
+                                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Tu Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="asunto" placeholder="Asunto" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                                    </div>
+                                <button type="submit" class="hero-btn">Enviar Mensaje</button>
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <p>&copy; 2024 Carlos Mauro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading');
+            if (loadingScreen) {
+                loadingScreen.classList.add('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navContainer = document.getElementById('navContainer');
+        const mainContent = document.getElementById('mainContent');
+        const footer = document.getElementById('footer');
+
+        menuToggle.addEventListener('click', () => {
+            navContainer.classList.toggle('mobile-visible');
+            if (navContainer.classList.contains('mobile-visible')) {
+                menuToggle.querySelector('i').className = 'fas fa-times';
+            } else {
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.dataset.theme = document.body.dataset.theme === 'dark' ? '' : 'dark';
+            themeToggle.querySelector('i').className = document.body.dataset.theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
+        // Close mobile menu on resize if wider than 768px
+        function handleResize() {
+            if (window.innerWidth > 768) {
+                navContainer.classList.remove('mobile-visible');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+                mainContent.classList.remove('expanded');
+                footer.classList.remove('expanded');
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                if (!navContainer.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navContainer.classList.remove('mobile-visible');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+                }
+            }
+        });
+
+        // Skill bar animations
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillSection = document.getElementById('resume');
+
+        const skillObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 500);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (skillSection) {
+            skillObserver.observe(skillSection);
+        }
+    </script>
+</body>
+</html>
